@@ -9,20 +9,37 @@
     <version>1.0-SNAPSHOT</version>
 
 
+
+
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+        <!-- https://mvnrepository.com/artifact/aopalliance/aopalliance -->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aop</artifactId>
-            <version>5.1.3.RELEASE</version>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+            <version>1.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
+        <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.8.13</version>
+        </dependency>
+
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-aop &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-aop</artifactId>-->
+            <!--<version>5.1.3.RELEASE</version>-->
+        <!--</dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-aop</artifactId>
-            <version>5.1.3.RELEASE</version>
+            <artifactId>spring-context</artifactId>
+            <version>5.1.1.RELEASE</version>
         </dependency>
 
 

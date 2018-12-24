@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
+    <!-- bean 实体 -->
+    <bean id="helloWorldImpl1" class="com.inte.HelloWorldImpl1"></bean>
+
+    <bean id="helloWorldImpl2" class="com.inte.HelloWorldImpl2"></bean>
+
+    <bean id="timehandler" class="com.test.TimeHandler"></bean>
 
 
+    <!-- aop 配置 -->
+
+    <aop:config>
+
+
+        <!-- 切面（aspect） 类是对物体特征的抽象，切面就是对横切关注点的抽象 , ref: 切入需要执行的方法-->
+        <aop:aspect id="time" ref="timehandler">
+
+            <!--切入点（pointcut） 对连接点进行拦截的定义-->
+            <aop:pointcut id="addAllMethod" expression="execution(* com.inte.HelloWorld.*(..))"></aop:pointcut>
+
+            <!--  执行前运行-->
+            <aop:before method="printTime" pointcut-ref="addAllMethod"></aop:before>
+
+
+            <!--  执行后运行-->
+            <aop:after method="printTime" pointcut-ref="addAllMethod"></aop:after>
+
+
+        </aop:aspect>
+
+
+    </aop:config>
 
 
 </beans>
