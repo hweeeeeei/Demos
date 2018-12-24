@@ -13,8 +13,7 @@ public class HelloWorldImpl1 implements HelloWorld {
 
     public void printHelloWorld() {
 
-
-        System.out.println(" printHelloWorld111111");
+        System.out.println("printHelloWorld111111");
 
     }
 

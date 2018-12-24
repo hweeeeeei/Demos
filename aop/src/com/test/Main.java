@@ -20,19 +20,16 @@ public class Main {
         HelloWorld he2 = (HelloWorld) ctx.getBean("helloWorldImpl2");
 
         he1.printHelloWorld();
-
         System.out.println();
-
         he1.doPrint();
 
         System.out.println("-------");
 
-
         he2.printHelloWorld();
-
         System.out.println();
-
         he2.doPrint();
+        //给HelloWorld接口的两个实现类的所有方法都加上了代理，代理内容就是打印时间
+
 
     }
 }

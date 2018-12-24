@@ -14,7 +14,7 @@ public class HelloWorldImpl2 implements HelloWorld {
     public void printHelloWorld() {
 
 
-        System.out.println(" printHelloWorld2222");
+        System.out.println("printHelloWorld2222");
 
     }
 
