@@ -8,13 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="aop" />
         <module name="aop-demo" />
-        <module name="Demos" />
+        <module name="ioc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="aop" target="1.5" />
       <module name="aop-demo" target="1.8" />
       <module name="Demos" target="1.5" />
+      <module name="ioc" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
