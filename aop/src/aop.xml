@@ -8,7 +8,6 @@
     <bean id="helloWorldImpl1" class="com.inte.HelloWorldImpl1"></bean>
     <bean id="helloWorldImpl2" class="com.inte.HelloWorldImpl2"></bean>
     <bean id="timehandler" class="com.test.TimeHandler"></bean>
-
     <bean id="loghandler" class="com.test.LogHandler"></bean>
 
 

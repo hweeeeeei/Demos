@@ -1,6 +1,6 @@
 package com.test;
 
-public class TimeHandler {
+public class    TimeHandler {
 
 
     // 打印时间

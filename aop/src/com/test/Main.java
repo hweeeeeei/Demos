@@ -16,6 +16,7 @@ public class Main {
         // 加载配置文件
         ApplicationContext ctx = new ClassPathXmlApplicationContext("aop.xml");
 
+        //获取bean对象
         HelloWorld he1 = (HelloWorld) ctx.getBean("helloWorldImpl1");
         HelloWorld he2 = (HelloWorld) ctx.getBean("helloWorldImpl2");
 
